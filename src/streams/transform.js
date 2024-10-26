@@ -2,9 +2,6 @@ import fs from 'fs'
 import stream from "node:stream";
 const transform = async () => {
 
-
-
-
     const transformSteam = new stream.Transform({
         transform(data, encoding, callback) {
             const reverseData = data.toString().trim().split('').reverse().join('');
